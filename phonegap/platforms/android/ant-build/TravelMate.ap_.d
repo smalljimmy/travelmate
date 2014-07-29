@@ -43,6 +43,8 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\settings.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\css\main.css \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\backarrow.png \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\blue_dot.png \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\green_dot.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\hamburger_f.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_arrival.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_bus.png \
