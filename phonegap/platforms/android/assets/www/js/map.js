@@ -42,7 +42,7 @@ function SetCurrentPositionMarker(myPos) {
     });    
 }
 function GenerateRandonMarkers(myPos) {
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 5; i++) {
         var lat =  Math.floor((Math.random() * 2) + 1) / 1000 * (Math.floor(Math.random()*2) == 1 ? 1 : -1); 
         var lng =   Math.floor((Math.random() * 2) + 1) / 1000 * (Math.floor(Math.random()*2) == 1 ? 1 : -1); 
         var marker = new google.maps.Marker({
