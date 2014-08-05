@@ -40,9 +40,13 @@ router.route('/guests')
 		
 		var guest = new Guest(); 		// create a new instance of the Guest model
 		guest.name = req.body.name;  // set the guest name (comes from the request)
-		guest.latitude = req.body.latitude;
-		guest.longitude = req.body.longitude
-		guest.gender = req.body.gender
+		if(req.body.latitude){
+			guest.latitude = req.body.latitude;
+		}
+		if(req.body.longitude){
+			guest.longitude = req.body.longitude;
+		}
+		guest.gender = req.body.gender;
 		
 		// save the guest and check for errors
 		guest.save(function(err) {
@@ -87,11 +91,21 @@ router.route('/guests/:guest_id')
 			if (err)
 				res.send(err);
 
-			guest.name = req.body.name; 	// update the guests info
-			guest.latitude = req.body.latitude;
-			guest.longitude = req.body.longitude
-			guest.gender = req.body.gender
-
+			if (req.body.name){
+				guest.name = req.body.name; 	// update the guests info
+			}
+			
+			if (req.body.latitude){
+				guest.latitude = req.body.latitude;
+			}
+			
+			if (req.body.longitude){
+				guest.longitude = req.body.longitude;
+			}
+			
+			if (req.body.gender){
+				guest.gender = req.body.gender;
+			}
 			// save the guest
 			guest.save(function(err) {
 				if (err)
