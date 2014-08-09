@@ -37,6 +37,7 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\index.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\login.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\map.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\plugins \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\profile.html \
@@ -58,6 +59,9 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\profilephoto_f.jpg \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\profilephoto_m.jpg \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\profilephoto_o.jpg \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\jquery-1.11.1.min.js \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\index.js \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\jquery-2.1.1.js \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\login.js \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\logout.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\map.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\ant-build\AndroidManifest.xml \

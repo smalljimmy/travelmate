@@ -30,18 +30,19 @@ var onSuccess = function(position) {
 
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     
-    SetCurrentPositionMarker(myPos);
-    GenerateRandonMarkers(myPos);
+    setCurrentPositionMarker(myPos);
+    GetOtherMarkers(myPos);
 };
 
-function SetCurrentPositionMarker(myPos) {
+function setCurrentPositionMarker(myPos) {
     var marker = new google.maps.Marker({
         position: myPos,
         map: map,
         icon: blueDot,
     });    
 }
-function GenerateRandonMarkers(myPos) {
+
+function GetOtherMarkers(myPos) {
     for (var i = 0; i < 5; i++) {
         var lat =  Math.floor((Math.random() * 2) + 1) / 1000 * (Math.floor(Math.random()*2) == 1 ? 1 : -1); 
         var lng =   Math.floor((Math.random() * 2) + 1) / 1000 * (Math.floor(Math.random()*2) == 1 ? 1 : -1); 
@@ -54,5 +55,5 @@ function GenerateRandonMarkers(myPos) {
 }
 
 function onError(error) {
-    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+    alert("Error code: " + error.code + "message: " + error.message);
 }
