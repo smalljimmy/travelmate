@@ -14,12 +14,13 @@ function login() {
         success: function(data) {
             if (data.message == "guest exists.") {
                 alert("Username already exists.");
-            }
-            if (data.message == "guest created!") {
+            } else if (data.message == "guest created!") {
                 window.localStorage.setItem("loginname", $("#name").val());
                 window.localStorage.setItem("loginid", data.id);
                 alert("Please wait, as we update your GPS location...");
                 navigator.geolocation.getCurrentPosition(setLocation, onError);
+            } else {
+                alert("Return message unknown: " + data.message);
             }
         },
         error: function(data, status) {
