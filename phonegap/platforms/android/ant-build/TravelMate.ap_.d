@@ -52,13 +52,7 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_eat.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_meetingpoint.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_sightseeing.png \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\member0.png \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\member1.png \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\member2.png \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\member3.png \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\profilephoto_f.jpg \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\profilephoto_m.jpg \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\profilephoto_o.jpg \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\person.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\index.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\jquery-2.1.1.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\login.js \

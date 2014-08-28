@@ -49,7 +49,6 @@ function GetOtherMarkers(myPos) {
         cache: false,
         success: function(data) {
             $.each(data, function(key,value){
-                alert(value.latitude +","+ value.longitude);
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(value.latitude, value.longitude),
                     map: map,
