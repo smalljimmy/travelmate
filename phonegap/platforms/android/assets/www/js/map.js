@@ -43,15 +43,31 @@ function setCurrentPositionMarker(myPos) {
 }
 
 function GetOtherMarkers(myPos) {
-    for (var i = 0; i < 5; i++) {
-        var lat =  Math.floor((Math.random() * 2) + 1) / 1000 * (Math.floor(Math.random()*2) == 1 ? 1 : -1); 
-        var lng =   Math.floor((Math.random() * 2) + 1) / 1000 * (Math.floor(Math.random()*2) == 1 ? 1 : -1); 
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(myPos.lat() + lat, myPos.lng() + lng),
-            map: map,
-            icon: greenDot,
-        }); 
-    }
+     $.ajax({
+        type: "GET",
+        url: "http://travelmateserver-21360.onmodulus.net/api/guests",
+        cache: false,
+        success: function(data) {
+            $.each(data, function(key,value){
+                alert(value.latitude +","+ value.longitude);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(value.latitude, value.longitude),
+                    map: map,
+                    icon: greenDot,
+                    title: "test"
+                });
+                var infowindow = new google.maps.InfoWindow({
+                    content: value.name
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map, marker);
+                });
+            });
+        },
+        error: function(data, status) {
+            alert("Fetching others failed."); 
+        }
+    });
 }
 
 function onError(error) {

@@ -17,7 +17,7 @@ function login() {
             } else if (data.message == "guest created!") {
                 window.localStorage.setItem("loginname", $("#name").val());
                 window.localStorage.setItem("loginid", data.id);
-                alert("Please wait, as we update your GPS location...");
+                alert("Fetching GPS location...");
                 navigator.geolocation.getCurrentPosition(setLocation, onError);
             } else {
                 alert("Return message unknown: " + data.message);
@@ -40,15 +40,11 @@ var setLocation = function(position) {
             if (data.message == "Guest updated!") {
                 window.location.href = "index.html";
             } else {
-                alert("Setting the location did not work: " + data.message);
+                alert("Fetched failed: " + data.message);
             }
         },
         error: function(data, status) {
-            alert("Setting the location did not work."); 
+            alert("Fetching the location failed."); 
         }
     });
-}
-
-function onError(error) {
-    alert("Error code: " + error.code + "message: " + error.message);
 }
