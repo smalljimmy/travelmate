@@ -11,6 +11,19 @@ body {
 	margin-left: auto;
 	margin-right: auto; 
 }
+
+#logo{
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	top:100px;
+}
+
+#login_form {
+	text-align:center;
+}
+
 #headerbackground{
 	background:#5868e1; 
 	height:45px;

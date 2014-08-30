@@ -48,3 +48,7 @@ var setLocation = function(position) {
         }
     });
 }
+
+function onError(error) {
+    alert("Error code: " + error.code + "message: " + error.message);
+}

@@ -52,6 +52,7 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_eat.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_meetingpoint.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_sightseeing.png \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\logo.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\person.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\index.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\jquery-2.1.1.js \

@@ -53,12 +53,12 @@ function GetOtherMarkers(myPos) {
                     position: new google.maps.LatLng(value.latitude, value.longitude),
                     map: map,
                     icon: greenDot,
-                    title: "test"
-                });
-                var infowindow = new google.maps.InfoWindow({
-                    content: value.name
+                    title: value.name
                 });
                 google.maps.event.addListener(marker, 'click', function() {
+                    var infowindow = new google.maps.InfoWindow({
+                        content: marker.title
+                    });
                     infowindow.open(map, marker);
                 });
             });
