@@ -56,7 +56,7 @@ function removeLoading() {
 
 var setLocation = function(position) {
 	window.location.href = "index.html";
-	sendLocationToServer();
+	//sendLocationToServer();
 };
 
 function onError(error) {
