@@ -8,14 +8,12 @@
 <script src="js/login.js"></script>
 </head>
 <body>
-	<div id="wholepage">
-		<img id="logo" src="images/logo.png" width="50" height="50">
-		<form id="login_form" name="login_form">
-			<label>Name:</label> <input id="name" type="text" name="name">
-			<br> <label>Gender:</label> <input id="gender_male" type="radio"
-				name="gender" value="male" checked="checked">Male <input
-				type="radio" name="gender" value="female">Female <br> <input
-				type="button" value="Login" onclick="login();">
-		</form>
+	<img id="logo" src="images/logo.png" width="50" height="50">
+	<div id="login_form">
+		<label>Name:</label> <input id="name" type="text" name="name">
+		<br> <label>Gender:</label> <br> <input id="gender_male"
+			type="radio" name="gender" value="male" checked="checked">Male
+		<br> <input type="radio" name="gender" value="female">Female<br>
+		<input id="login" type="button" value="Login" onclick="login();">
 	</div>
 </body>

@@ -21,18 +21,6 @@ a {
 	text-decoration: none;
 }
 
-#logo {
-	display: block;
-	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 20px;
-	top: 100px;
-}
-
-#login_form {
-	text-align: center;
-}
-
 #header {
 	background: #5868e1;
 	height: 45px;
@@ -71,19 +59,11 @@ a {
 	height: 45px
 }
 
-#backarrow {
-	width: 32px;
-	height: 24px;
-	padding: 8px
+.clear {
+	clear: both;
 }
 
-#contentbox {
-	margin: 0px auto;
-	width: 100%;
-	height: 42px;
-	padding-top: 87px;
-}
-
+/* Navigation */
 .tab {
 	float: left;
 	margin: 0;
@@ -103,10 +83,6 @@ a {
 	height: 45px;
 }
 
-.clear {
-	clear: both;
-}
-
 /* Settings */
 .settings_item {
 	display: block;
@@ -120,6 +96,26 @@ a {
 .settings_item_white {
 	background-color: #FFFFFF;
 	padding-left: 20px;
+}
+
+/* Login */
+#login_form {
+	width: 200px;
+	margin: 0 auto;
+}
+
+#login {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	top: 100px;
 }
 
 /* Agenda */
@@ -176,12 +172,12 @@ a {
 	float: left;
 	width: 1%;
 	height: 70px;
-	background-color: #ffffff;
+	background-color: #C0C0C0;
 }
 
 #groupchat_input #text {
 	float: left;
-	width: 78%;
+	width: 77%;
 	height: 60px;
 	border: 0;
 	padding: 0;
