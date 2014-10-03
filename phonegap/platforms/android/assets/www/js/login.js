@@ -40,16 +40,27 @@ function saveLoginData(loginId) {
 }
 
 function fetchGpsLocation() {
-	alert("Fetching GPS location...");
+	setLoading();
 	navigator.geolocation.getCurrentPosition(setLocation, onError);
+}
+
+function setLoading() {
+	$("body").attr("id", "loading_background");
+	$("#content").hide();
+}
+
+function removeLoading() {
+	$("body").removeAttr("id");
+	$("#content").show();
 }
 
 var setLocation = function(position) {
 	window.location.href = "index.html";
-	// sendLocationToServer();
+	sendLocationToServer();
 };
 
 function onError(error) {
+	removeLoading();
 	alert("Error code: " + error.code + "message: " + error.message);
 }
 

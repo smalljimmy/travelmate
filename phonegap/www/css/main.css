@@ -11,13 +11,12 @@ body {
 }
 
 body, input, textarea {
-	color: #696969;
 	font-size: 16px;
 	font-family: 'Comic Sans MS', cursive;
 }
 
 a {
-	color: #696969;
+	color: #000000;
 	text-decoration: none;
 }
 
