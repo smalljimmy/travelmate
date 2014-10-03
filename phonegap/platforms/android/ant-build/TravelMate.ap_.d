@@ -40,13 +40,13 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\login.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\map.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\plugins \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\poi.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\profile.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\settings.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\css\main.css \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\backarrow.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\blue_dot.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\green_dot.png \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\hamburger_f.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_arrival.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_bus.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_eat.png \
@@ -54,6 +54,8 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_sightseeing.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\logo.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\person.png \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\settings.png \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\groupchat.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\index.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\jquery-2.1.1.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\login.js \
