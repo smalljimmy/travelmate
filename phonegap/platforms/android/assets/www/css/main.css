@@ -63,6 +63,13 @@ a {
 	clear: both;
 }
 
+#loading_background {
+	background-image: url('../images/loading.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
 /* Navigation */
 .tab {
 	float: left;

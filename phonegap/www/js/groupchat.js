@@ -8,6 +8,7 @@ function send() {
 	var text = $("#text").val().replace(/\n/g, "<br>");
 	displayMessage(text);
 	saveMessage(text);
+	$("#text").val("");
 	scrollToBottom();
 }
 
@@ -43,4 +44,5 @@ $(document).ready(function() {
 	for (var i = 0; i < chatMessages.length; i++) {
 		displayMessage(chatMessages[i]);
 	}
+	scrollToBottom();
 });
