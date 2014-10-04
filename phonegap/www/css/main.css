@@ -158,16 +158,18 @@ a {
 	border-bottom: 1px solid #C0C0C0;
 }
 
-.chat_item .chat_item_person {
+.chat_item img {
 	float: left;
-	width: 45px;
-	overflow: hidden;
-	color: #C0C0C0;
 }
 
 .chat_item .chat_item_text {
 	float: left;
 	padding: 5px;
+}
+
+.chat_item .chat_item_person {
+	overflow: hidden;
+	color: #C0C0C0;
 }
 
 #chat_input {

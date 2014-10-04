@@ -46,7 +46,6 @@ function createMarker(lat, lng, dot, name) {
 	google.maps.event.addListener(marker, 'click', function() {
 		infowindow.open(map, marker);
 	});
-	infowindow.open(map, marker);
 }
 
 function getOtherMarkers(myPos) {
