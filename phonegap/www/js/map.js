@@ -40,10 +40,10 @@ function createMarker(lat, lng, dot, name) {
 		icon : dot,
 		title : name
 	});
+	var infowindow = new google.maps.InfoWindow({
+		content : marker.title
+	});
 	google.maps.event.addListener(marker, 'click', function() {
-		var infowindow = new google.maps.InfoWindow({
-			content : marker.title
-		});
 		infowindow.open(map, marker);
 	});
 	infowindow.open(map, marker);
