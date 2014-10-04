@@ -30,10 +30,10 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\ant-buil
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\_where-is-www.txt \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\agenda.html \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\chat.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\cordova.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\cordova_plugins.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\css \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\groupchat.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\index.html \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js \
@@ -56,7 +56,7 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\logo.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\person.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\settings.png \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\groupchat.js \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\chat.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\index.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\jquery-2.1.1.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\login.js \

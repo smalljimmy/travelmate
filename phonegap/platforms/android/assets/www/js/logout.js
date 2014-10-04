@@ -1,7 +1,7 @@
 function logout() {
+	// sendLogoutToServer();
 	window.localStorage.clear();
 	window.location.href = "login.html";
-	// sendLogoutToServer();
 }
 
 function sendLogoutToServer() {

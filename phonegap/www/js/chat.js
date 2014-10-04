@@ -13,7 +13,9 @@ function send() {
 }
 
 function displayMessage(text) {
-	var chatItemOpeningTags = "<div class=\"groupchat_item\"><img class=\"icon\" src=\"images/person.png\"><div class=\"groupchat_item_text\">";
+	var chatItemOpeningTags = "<div class=\"chat_item\"><div class=\"chat_item_person\"><img src=\"images/person.png\" width=\"45\" height=\"45\">";
+	chatItemOpeningTags += window.localStorage.getItem("loginname");
+	chatItemOpeningTags += "</div><div class=\"chat_item_text\">";
 	var chatItemClosingTags = "</div><div class=\"clear\"></div</div>";
 	$("#chat_window").append(chatItemOpeningTags + text + chatItemClosingTags);
 }

@@ -1,4 +1,6 @@
+/* General */
 html, body {
+	height: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -12,7 +14,7 @@ body {
 
 body, input, textarea {
 	font-size: 16px;
-	font-family: 'Comic Sans MS', cursive;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -20,6 +22,18 @@ a {
 	text-decoration: none;
 }
 
+.clear {
+	clear: both;
+}
+
+#loading_background {
+	background-image: url('../images/loading.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/* Header */
 #header {
 	background: #5868e1;
 	height: 45px;
@@ -56,17 +70,6 @@ a {
 	float: right;
 	width: 45px;
 	height: 45px
-}
-
-.clear {
-	clear: both;
-}
-
-#loading_background {
-	background-image: url('../images/loading.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
 }
 
 /* Navigation */
@@ -150,23 +153,24 @@ a {
 	line-height: 45px;
 }
 
-/* Groupchat */
-.groupchat_item {
+/* Chat */
+.chat_item {
 	border-bottom: 1px solid #C0C0C0;
 }
 
-.groupchat_item img {
+.chat_item .chat_item_person {
 	float: left;
-	height: 45px;
 	width: 45px;
+	overflow: hidden;
+	color: #C0C0C0;
 }
 
-.groupchat_item .groupchat_item_text {
+.chat_item .chat_item_text {
 	float: left;
 	padding: 5px;
 }
 
-#groupchat_input {
+#chat_input {
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
@@ -174,14 +178,14 @@ a {
 	border-top: 2px solid #C0C0C0;
 }
 
-#groupchat_input .space {
+#chat_input .space {
 	float: left;
 	width: 1%;
 	height: 70px;
 	background-color: #C0C0C0;
 }
 
-#groupchat_input #text {
+#chat_input #text {
 	float: left;
 	width: 77%;
 	height: 60px;
@@ -192,7 +196,7 @@ a {
 	padding: 5px 0 5px 0;
 }
 
-#groupchat_input #send {
+#chat_input #send {
 	float: left;
 	width: 20%;
 	height: 70px;

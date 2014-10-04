@@ -46,11 +46,12 @@ function createMarker(lat, lng, dot, name) {
 		});
 		infowindow.open(map, marker);
 	});
+	infowindow.open(map, marker);
 }
 
 function getOtherMarkers(myPos) {
-	getOtherMarkersRandom(myPos);
 	// getOtherMarksersFromServer();
+	getOtherMarkersRandom(myPos);
 }
 
 function getOtherMarkersRandom(myPos) {
