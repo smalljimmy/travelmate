@@ -206,14 +206,14 @@ a {
 
 #chat_input .space {
 	float: left;
-	width: 1%;
+	width: 0.5%;
 	height: 70px;
 	background-color: #C0C0C0;
 }
 
 #chat_input #text {
 	float: left;
-	width: 77%;
+	width: 78.5%;
 	height: 60px;
 	border: 0;
 	padding: 0;

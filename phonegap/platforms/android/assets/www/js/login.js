@@ -37,8 +37,6 @@ function sendLoginToServer() {
 function saveLoginData(loginId) {
 	window.localStorage.setItem("loginname", $("#name").val());
 	window.localStorage.setItem("loginid", loginId);
-	window.localStorage.setItem("gender_male", $("#gender_male")
-			.prop("checked"));
 	window.localStorage.setItem("usertype_leader", $("#usertype_leader").prop(
 			"checked"));
 }

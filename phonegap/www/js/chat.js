@@ -6,20 +6,28 @@ function send() {
 		return;
 	}
 	var text = $("#text").val().replace(/\n/g, "<br>");
-	displayMessage(text);
-	saveMessage(text);
+	var message = {
+		text : text,
+		time : new Date()
+	}
+	displayMessage(message);
+	saveMessage(message);
 	$("#text").val("");
 	scrollToBottom();
 }
 
-function displayMessage(text) {
+function displayMessage(message) {
 	var chatItemOpeningTags = "<div class=\"chat_item\">";
 	chatItemOpeningTags += "<img src=\"images/person.png\" width=\"45\" height=\"45\">";
 	chatItemOpeningTags += "<div class=\"chat_item_text\">";
 	var chatItemClosingTags = "</div><div class=\"chat_item_person clear\">";
 	chatItemClosingTags += window.localStorage.getItem("loginname");
+	chatItemClosingTags += " at " + message.time.getHours() + ":"
+			+ message.time.getMinutes() + " " + (message.time.getMonth() + 1)
+			+ "\\" + message.time.getDate() + "\\" + message.time.getFullYear();
 	chatItemClosingTags += "</div></div>"
-	$("#chat_window").append(chatItemOpeningTags + text + chatItemClosingTags);
+	$("#chat_window").append(
+			chatItemOpeningTags + message.text + chatItemClosingTags);
 }
 
 function scrollToBottom() {
@@ -28,9 +36,9 @@ function scrollToBottom() {
 	}, "slow");
 }
 
-function saveMessage(text) {
+function saveMessage(message) {
 	var chatMessages = getStoredMessages();
-	chatMessages.push(text);
+	chatMessages.push(message);
 	window.localStorage.setItem(chatMessagesStorage, JSON
 			.stringify(chatMessages));
 }
@@ -38,7 +46,11 @@ function saveMessage(text) {
 function getStoredMessages() {
 	var chatMessagesString = window.localStorage.getItem(chatMessagesStorage);
 	if (chatMessagesString != null) {
-		return JSON.parse(chatMessagesString);
+		var chatMessages = JSON.parse(chatMessagesString);
+		for (var i = 0; i < chatMessages.length; i++) {
+			chatMessages[i].time = new Date(chatMessages[i].time);
+		}
+		return chatMessages;
 	}
 	return new Array();
 }
