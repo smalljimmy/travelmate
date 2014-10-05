@@ -46,6 +46,7 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\css\main.css \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\backarrow.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\blue_dot.png \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\coming_soon.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\green_dot.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_arrival.png \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\images\icon_bus.png \
@@ -62,4 +63,5 @@ C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\w
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\login.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\logout.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\map.js \
+C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\assets\www\js\tabs.js \
 C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\ant-build\AndroidManifest.xml \

@@ -12,6 +12,11 @@ body {
 	padding-top: 45px;
 }
 
+.body_tabs {
+	padding-top: 85px;
+	height: auto;
+}
+
 body, input, textarea {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -28,6 +33,13 @@ a {
 
 #loading_background {
 	background-image: url('../images/loading.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#coming_soon_bacground {
+	background-image: url('../images/coming_soon.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -51,15 +63,6 @@ a {
 	margin-left: 10px;
 }
 
-#header2 {
-	background: #C0C0C0;
-	height: 42px;
-	position: fixed;
-	width: 100%;
-	position: fixed;
-	top: 45px;
-}
-
 #back_image {
 	width: 45px;
 	height: 45px;
@@ -73,10 +76,19 @@ a {
 }
 
 /* Navigation */
+#tabs {
+	background: #C0C0C0;
+	height: 42px;
+	position: fixed;
+	width: 100%;
+	position: fixed;
+	top: 45px;
+}
+
 .tab {
 	float: left;
 	margin: 0;
-	width: 24.625%;
+	width: 33%;
 	text-align: center;
 	line-height: 42px;
 }
@@ -90,6 +102,14 @@ a {
 	width: 0.5%;
 	background: #FFFFFF;
 	height: 45px;
+}
+
+#poi_tab {
+	display: none;
+}
+
+.tab_leader {
+	width: 24.625% !important;
 }
 
 /* Settings */
@@ -111,6 +131,10 @@ a {
 #login_form {
 	width: 200px;
 	margin: 0 auto;
+}
+
+#login_form #name {
+	width: 200px;
 }
 
 #login {
