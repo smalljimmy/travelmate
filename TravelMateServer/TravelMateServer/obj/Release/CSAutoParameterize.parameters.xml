@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:wsulh5j0iq.database.windows.net,1433;Database=travelmate;User ID=travelmate_sql_server@wsulh5j0iq;Password=/j+Rn,/82,oEZh@G3jgaHxo^+'`r3Mg'lU1`YR'sFpEqM?G9IM;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Marco\\Documents\\Projects\\TravelMate\\TravelMateServer\\TravelMateServer\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
