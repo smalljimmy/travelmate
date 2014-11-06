@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>TravelMate</title>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".mode").change(function() {
+                if ($(this).attr("id") == "path") {
+                    $("#map").attr("src", "1.png");
+                } else {
+                    $("#map").attr("src", "2.png");
+                }
+            });
+            $("#path").prop("checked", true);
+        });
+    </script>
+    <style type="text/css">
+        html,
+        body {
+            background-color: #C0C0C0;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #title {
+            background-color: #5868e1;
+            padding: 10px;
+            color: #F5F5F5;
+        }
+        #mode {
+            padding: 10px;
+            background-color: #F5F5F5;
+        }
+        #mode_label {
+            padding-bottom: 5px;
+        }
+        #preload {
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="">
+    <div id="title">
+        <h2>TavelMate Analysis</h2>
+    </div>
+    <div id="mode">
+        <div id="mode_label">Mode:</div>
+        <input id="path" class="mode" name="mode" type="radio"> Path
+        <input class="mode" name="mode" type="radio"> Hotspot
+    </div>
+    <img id="map" src="1.png" width="100%" />
+    <div id="preload">
+        <img src="12.png" />
+    </div>
+</body>
+
+</html>
