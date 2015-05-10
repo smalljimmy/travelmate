@@ -38,6 +38,17 @@ router.route('/guests')
 	// create a guest (accessed at POST http://localhost:9999/api/guests)
 	.post(function(req, res) {
 		
+		Guest.findOne({ name: req.body.name}, function (err, guest){
+			if(err)
+				res.send(err);
+				
+			if(guest) {
+				res.json({ id: guest.id, message: 'guest exists.'});
+				return;
+			}
+		});
+		
+		
 		var guest = new Guest(); 		// create a new instance of the Guest model
 		guest.name = req.body.name;  // set the guest name (comes from the request)
 		if(req.body.latitude){
@@ -53,7 +64,7 @@ router.route('/guests')
 			if (err)
 				res.send(err);
 
-			res.json({ message: 'guest created!' });
+			res.json({ id: guest.id, message: 'guest created!' });
 		});
 		
 	})
@@ -131,38 +142,89 @@ router.route('/guests/:guest_id')
 	});
 
 
+// on routes that end in /messages
+// ----------------------------------------------------
+router.route('/messages')
+
+	// create a message
+	.post(function(req, res) {
+			
+		var message = new Message(); 		// create a new instance of the Message model
+		message.from = req.body.from;
+		message.to = req.body.to;
+		message.content = req.body.content;
+		
+		// save the message and check for errors
+		message.save(function(err) {
+			if (err)
+				res.send(err);
+
+			res.json({ id: message.id, message: 'message created!' });
+		});
+		
+	})
+	
+	
+	// get all the messages 
+	.get(function(req, res) {
+		Message.find(function(err, messages) {
+			if (err)
+				res.send(err);
+
+			res.json(messages);
+		});
+	});	
+	
+	
+// on routes that end in /messages/:from/:to
+// ----------------------------------------------------	
+router.route('/messages/:from')
+
+	// get the messages from/to the guest id 
+	.get(function(req, res) {
+		
+		/**
+		var filteredQuery = {},
+		  acceptableFields = ['from', 'to'];
+
+		acceptableFields.forEach(function(field) {
+		  req.query[field] && filteredQuery[field] = req.query[field];
+		});
+		**/
+		
+		Message.find({from:req.query.from}, function (err, messages){
+			if(err)
+				res.send(err);
+				
+			res.json(messages);
+
+		});	
+		
+		/**
+		Message.update({from:req.query.from}, { time: Date.now() }, function(err, numberAffected, rawResponse) {
+			//handle it
+			if(err)
+					res.send(err);
+			
+			Message.find({from:req.query.from}, function (err, messages){
+				if(err)
+					res.send(err);
+					
+				res.json(messages);
+
+			})				
+		});		
+		**/
+	});	
+	
+
+	
+
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
 app.use('/api', router);
 
 var Guest     = require('./models/guest');
-
-
-app.get('/guest/getAllGuests', function(req, res) {
-	res.type('application/json');
-	var guests = [];
-	
-	
-	var guest = new Object ();
-	guest.name = "Jimmy";
-	guest.latitude = 100;
-	guest.longitude = 100;
-	guest.gender = 0;
-	
-	guests.push(guest);
-	
-	guest = new Object ();
-	guest.name = "Jenny";
-	guest.latitude = 101;
-	guest.longitude = 110;
-	guest.gender = 1;
-	
-	guests.push(guest);
-
-	var json = JSON.stringify(guests);
-	res.json(json);
-});
-
-
+var Message   = require('./models/message');
 
 app.listen(port);

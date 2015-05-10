@@ -1,2 +1,2 @@
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\ant-build\AndroidManifest.xml : \
-C:\Users\Marco\Documents\Projects\TravelMate\phonegap\platforms\android\AndroidManifest.xml \
+C:\travelmate\App\platforms\android\ant-build\AndroidManifest.xml : \
+C:\travelmate\App\platforms\android\AndroidManifest.xml \
