@@ -39,12 +39,16 @@
 						
 						<span ng:hide="editorEnabled" ng:click="enableEditor()">
 							<b>{{poi.name}}</b> ({{poi.latitude}}, {{poi.longitude}})
+							<b>{{poi.audio}}</b>
+							<b>{{poi.pic}}</b>
 						</span>
 						
 						<span ng:show="editorEnabled">
 							<input type="text" size="10" name="poiName" ng:required />
 							<input type="text" size="30" name="poiLatitude" />
 							<input type="text" size="30" name="poiLongitude" />
+							<input type="text" size="30" name="poiAudio" />
+							<input type="text" size="30" name="poiPic" />
 							
 							<button ng:click="save()">Ok</button>
 							<button ng:click="disableEditor()">Cancel</button>
@@ -71,12 +75,16 @@
 				$scope.pois.push({
 					name: $scope.poiName,
 					latitude: $scope.poiLatitude,
-					longitude: $scope.poiLongitude
+					longitude: $scope.poiLongitude,
+					audio: $scope.audio,
+					pic: $scop.pic
 				});
 
 				$scope.poiName = '';
 				$scope.poiLatitude = '';
 				$scope.poiLongitude = '';
+				$scope.audio = '';
+				$scope.pic = '';
 			}
 			$scope.enableEditor = function() {
 				$scope.editorEnabled = true;
@@ -84,6 +92,8 @@
 				$scope.poiName = $scope.poi.name;
 				$scope.poiLatitude = $scope.poi.latitude;
 				$scope.poiLongitude = $scope.poi.longitude;
+				$scope.audio = $scope.poi.audio;
+				$scope.pic = $scope.poi.pic;
 			}
 			$scope.disableEditor = function() {
 				$scope.editorEnabled = false;
@@ -96,7 +106,9 @@
 				$scope.poi.name = $scope.poiName;
 				$scope.poi.latitude = $scope.poiLatitude;
 				$scope.poi.longitude = $scope.poiLongitude;
-
+				$scope.poi.audio = $scope.audio;
+				$scope.poi.pic =$scope.pic;
+				
 				$scope.disableEditor();
 				savePois($scope.pois);
 			}
@@ -119,11 +131,15 @@
 			return [{
 				name: "Standford Shopping Center",
 				latitude: 37.4629307,
-				longitude: -122.1748693},
+				longitude: -122.1748693,
+				audio: http://www.google.com,
+				pic: },
 			{
 				name: "West Menlo Park",
 				latitude: 37.4329499,
-				longitude: -122.202576}];
+				longitude: -122.202576,
+				audio: http://www.eth.ch,
+				pic: }];
 		}
 	
 	
